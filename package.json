@@ -12,13 +12,17 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "jest": {
     "preset": "react-native"
   },
   "dependencies": {
     "react": "16.3.1",
-    "react-native": "~0.55.2"
-  }
+    "react-native": "~0.55.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
